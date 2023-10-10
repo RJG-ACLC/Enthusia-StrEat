@@ -13,13 +13,6 @@
 
     <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
 
-
-
-  
-  
-
-  <title>Enthusia StrEat - Menu</title>
-
     <link rel="canonical" href="https://codepen.io/ann_/pen/dgVEaw">
   
   
@@ -37,7 +30,7 @@ body{
   margin:  0;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  background-color: #ffff3f;
+  background-color: #fbfb5b;
 }
 h1{
   font-size: 1.7em;
@@ -114,7 +107,7 @@ header{
 header:before{
   content: "";
   position: absolute;
-  background-color: #fcf300;
+  background-color: #fbfb5b;
   width: 100%;
   height: 68%;
   z-index: -1;
@@ -124,7 +117,6 @@ header:before{
 }
 .nav-brand img{
   width: auto;
-  padding-top: 1em;
   height: 7.5em;
 }
 .toggle-menu{
@@ -197,7 +189,7 @@ a.nav-link:focus{
 	display: flex;
 	height: 100vh;
 	align-items: center;
-	background: #fbfb5b url("https://i.postimg.cc/9fTzqwtw/flower2.png") no-repeat right bottom;
+	background: #ffff3f url("https://i.postimg.cc/9fTzqwtw/flower2.png") no-repeat right bottom;
 }
 .hero-img img{
   display: none;
@@ -227,7 +219,7 @@ a.nav-link:focus{
   display: block;
   position: relative;
   padding: 1.3em;
-  background-color: #fbfb5b;
+  background-color: #fcf300;
   text-align: center;
   margin-bottom: 2em;
 }
@@ -621,8 +613,9 @@ input{
   <nav id="nav-bar" class="navbar">
     <ul class="menu">
       <li><a class="nav-link" href="#featured">New in!</a></li>
-      <li><a class="nav-link" href="#collections">Collections</a></li>
+      <li><a class="nav-link" href="#Menu">Menu</a></li>
       <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#Feedback">Feedback</a></li>
       <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     <ul class="social-menu">
@@ -634,6 +627,17 @@ input{
   </nav>
 </header>
 
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-img">
+    <img src="background1.png" alt="Pixel Skincare">
+  </div>
+  <div class="hero-text">
+    <h1>Your cravings</br> On the Go!</h1>
+    <a href="#featured" class="btn">Explore</a>
+  </div>
+</div>
+
 <!-- Featured Section -->
 <section id="featured">
   <div class="title title-left">
@@ -641,12 +645,12 @@ input{
   </div>
   <div class="wrapper">
     <div class="image">
-      <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/387582067_987209035652884_604645751075770884_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=DOWGRjq3KIQAX_EZp66&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdR4rA2kggiIOFh6ZIz_sY-eETKIoQRg-JBvnUl10ZkHNQ&oe=654C47BA" alt="Fresh Fruit Shake Menu" width="200" height="400px">
+      <img src="F:\Enthusia StrEat\Shake.jpg" alt="Pixel Facial Cream">
     </div>
     <div class="text">
       <h2>FRESH FRUIT SHAKE</h2>
       <p>Savor the delightful medley of nature's finest fruits in our refreshing fruit shake, where every sip is a burst of diverse, fresh flavors.</p>
-      <a href="fruitshakes.html" class=btn>Details</a>
+      <a href="#" class=btn>Details</a>
     </div>
   </div>
 </section>
@@ -672,8 +676,41 @@ input{
   </div>
 </section>
 
+<!-- About Section -->
+<section id="about">
+  <div class="title title-left">
+    <span class="line"></span><h3>Enthusia_StrEat</h3>
+  </div>
+  <div class="wrapper">
+    <div class="text">
+      <p>Welcome to Enthusia_StrEat, your ultimate destination for a mouthwatering journey through</p>
+      <p>the world of burgers, hotdogs, shakes, and an array of delectable sides. We're not just a food</p>
+      <p>stop; we're a flavor-packed adventure waiting to delight your taste buds.</p>
+    </div>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EY4ihPFtNrY?si=5wZT7ykS1hhdyknc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="title title-right">
+    <span class="line"></span><h3>Feedback</h3>
+  </div>
+  <div class="wrapper">
+    <div class="text">
+      <p>Welcome to Enthusia_StrEat, your ultimate destination for a mouthwatering journey through</p>
+      <p>the world of burgers, hotdogs, shakes, and an array of delectable sides. We're not just a food</p>
+      <p>stop; we're a flavor-packed adventure waiting to delight your taste buds.</p>
+    </div>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EY4ihPFtNrY?si=5wZT7ykS1hhdyknc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
 <!-- Contact Section -->
-<footer>
 <section id="contact">
   <div class="wrapper">
     <div class="form-wrapper">    
@@ -684,23 +721,21 @@ input{
       </form>
     </div>
     <div class="contact-wrapper">
-      <h4>Stay In Touch With PIXEL</h4>
+      <h4>Stay In Touch With Enthusia_StrEat</h4>
       <div class="wrapper">        
         <ul class="social-menu">
-          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/enthusia.streat"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/enthusia_streat/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/@Enthusia_StrEat"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
         </ul>
-        <a class="contact-footer contact-tel" href="#"><i class="fa fa-phone" aria-hidden="true"></i>001-283-4892</a>
-        <a class="contact-footer contact-email" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send an email</a>
+        <a class="contact-footer contact-tel" href="#"><i class="fa fa-phone" aria-hidden="true"></i>0967 241 0051</a>
+        <a class="contact-footer contact-email" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/mfresado6%40gmail.com?compose=new"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send an email</a>
       </div>
     </div>
     <div class="copy-wrapper">
         
   </div>
 </section>
-</footer>
   
   
   
