@@ -499,6 +499,43 @@ input{
   }
 }
 
+@media(min-width: 768px){
+  /*  Global  */
+  .wrapper{
+    display: flex;
+  }
+  
+  /*  Header  */
+  .nav-brand img{
+    height: 10em;
+  }
+  .toggle-menu{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    z-index: 1;
+  }
+  .menu{
+    flex-direction: row;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  .social-menu{
+    display: none;
+  }
+  .menu li{
+    margin-top: 0;
+  }
+  a.nav-link{
+    margin-right: 3em;
+  }
+}
+
 @media(min-width: 320px){
   
 }
