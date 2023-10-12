@@ -291,9 +291,63 @@ input{
 .copy-wrapper a{
   font-weight: 700;
 }
-
-.footer {
-    color: #fbfb5b;
+#contact .wrapper{
+    flex-wrap: wrap;
+  }
+  .form-wrapper, .contact-wrapper{
+    flex: 1 0 50%;
+    align-self: center;
+    padding: 0 1em;
+  }
+  .copy-wrapper{
+    flex: 1 0 100%;
+    padding: 0 1em;
+  }
+  .form-wrapper:after,
+  .contact-wrapper:after{
+    display: none;
+  }
+  .contact-footer{
+    border: 0;
+    padding: 0;
+    margin: .6em auto;
+    text-align: left;
+  }
+  .contact-footer:hover{
+    background-color: transparent;
+  }
+  .contact-wrapper a i{
+    width: auto;
+    padding-right: 1em;
+  }
+  .contact-wrapper .social-menu{
+    display: flex;
+    order: 3;
+    justify-content: flex-start;
+  }
+  .contact-wrapper .social-menu a i{
+    padding-right: 0;
+  }
+  .copy-wrapper:before{
+    display: block;
+    content: "";
+    margin: 2em auto;
+    border-bottom: solid 1px #dadada;
+  }
+@media(min-width: 992px){
+  /*  Global  */
+  section{
+    padding: 5.8em 7em 0;
+  }  
+  .title.title-left{
+    margin-left: -2.5em;
+  }
+  .title.title-right{
+    margin-right: -2.5em;
+  }
+  .line{
+    width: 5.5em;
+  }
 }
 </style>
 
