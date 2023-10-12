@@ -25,6 +25,82 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+body{
+  color: #090b08;
+  margin:  0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: #fbfb5b;
+}
+h1{
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+h2{
+  text-transform: uppercase;
+}
+h4{
+  font-size: .8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h6{
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+  color: #090b08;
+}
+ul{
+  list-style: none;
+}
+section{
+  padding: 5.8em 2em 0;
+}
+.title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+.title.title-right{
+  justify-content: flex-end;
+}
+.line{  
+  width: 3em;
+  height: 1px;
+  background-color: #000;
+  margin-right: 1em;
+}
+.line.line-right{
+  order: 2;
+  margin-right: 0;
+  margin-left: 1em;
+}
+.btn{
+  display: inline-block;
+  padding: .5em 1.5em;
+  border: solid 1px #090b08;  
+  transition: all .3s ease-in;
+
+}
+.btn:hover, .btn:focus{
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  transition: all .3s ease-out; 
+}
+
 *{
     margin: 0px;
     padding: 0px;
