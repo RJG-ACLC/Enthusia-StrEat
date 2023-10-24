@@ -1,27 +1,31 @@
 [
  {
      "id": 1,
-     "name": "Burger Bite = 2pcs",
+     "name": "Burger Bite - 2pcs",
      "price": 55,
-     "image": "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/394260542_716643653653227_8329210021961783857_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHi-w23XB5cRlF69XXzt-Z21P7ayaJvqHXU_trJom-odX2emGer8Gnt28PR5FANAyTGQtjDchdpQYIFpT2vBawn&_nc_ohc=jzxYfKZBbjMAX8WoibK&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfACq-JkmsyAxVxPj_DSI6EjgaYarrOw6NcOc52CEhCKgg&oe=653A2244"
+     "image": "https://gdurl.com/8Hys",
+     "description": "Contains"
  },
  {
 
      "id": 2,
      "name": "Big Bite Burger",
      "price": 55,
-     "image": "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/395130267_716643680319891_6139693725289815520_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGWo48-lSSm-I8Ysc07AYMxAhbUaKSeLIwCFtRopJ4sjA_Ef08hG5jP5bSdY19Jpd4xNc0YuKj55iQC5LIs36YI&_nc_ohc=PJM2a0AtQ2wAX8xjKUT&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfA5t-7HZeBIrRnxmHlDfY2JpkpPR4zk_hRYRuf_QDWYoQ&oe=653B6A65"
+     "image": "https://gdurl.com/6igS",
+     "description": "Contains:"
  },
  {
      "id": 3,
      "name": "Double Big Bite",
      "price": 100,
-     "image": "https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/387336846_3208163009484060_3846247822038420944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=dlpWyyyKZtIAX_BUVJe&_nc_ht=scontent.fmnl17-2.fna&oh=03_AdTr83BbjL3RjvRKKAkcXWbBcCITM2bM4rFSitisjSMbNw&oe=654F1CE5"
+     "image": "https://gdurl.com/deUE",
+     "description": "Contains: Lettuce"
  },
  {
      "id": 4,
      "name": "Giga Bite Burger",
      "price": 115,
-     "image": "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/394913384_716643750319884_1587720617614279742_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHFmxbbnL9Mlz3aaa-t0MnFA_WrS22nIDUD9atLbacgNdP1tmuDahw5IYz58dvW8CR4mzXHcoJqsgieb-gwmx5V&_nc_ohc=dUAJYRHW-AIAX8-K_7q&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfBt0ffGIQtaQWubHqolgzDt72ukZBQGW8vHYHFw1CaT6g&oe=653B0FC8"
+     "image": "https://gdurl.com/L_Eq",
+     "description": "Contains: Lettuce,"
  }
 ]
