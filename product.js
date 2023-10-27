@@ -1,3 +1,15 @@
+function updateWidth(){
+    viewport = document.querySelector("meta[name=viewport]");
+    if (window.orientation == 90 || window.orientation == -90) {
+        viewport.setAttribute('content', 'width=1401, initial-scale=0.34, maximum-scale=1.0, user-scalable=1');
+    }
+    else {
+        viewport.setAttribute('content', 'width=640, initial-scale=0.47, maximum-scale=1.0, user-scalable=1');
+    }
+}
+
+window.console = window.console || function(t) {};
+
 let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
@@ -14,6 +26,7 @@ iconCart.addEventListener('click', function(){
         container.style.transform = 'translateX(0)';
     }
 })
+
 close.addEventListener('click', function (){
     cart.style.right = '-100%';
     container.style.transform = 'translateX(0)';
@@ -63,7 +76,7 @@ function addDataToHTML(){
 let listCart = [];
 function checkCart(){
     var cookieValue = document.cookie
-    .split('; ')
+    .split(';')
     .find(row => row.startsWith('listCart='));
     if(cookieValue){
         listCart = JSON.parse(cookieValue.split('=')[1]);
@@ -96,7 +109,7 @@ function addCartToHTML(){
 
     let totalHTML = document.querySelector('.totalQuantity');
     let totalQuantity = 0;
-    // if has product in Cart
+
     if(listCart){
         listCart.forEach(product => {
             if(product){
