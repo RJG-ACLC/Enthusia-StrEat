@@ -447,8 +447,8 @@ a.nav-link{
 @media (max-width: 900px) {
   .listProduct {grid-template-columns: repeat(1, 1fr);
   margin: 0 0;}
-  .food-items {width: 380px;}
-  .listProduct .food-items img{width: 380px;}
+  .food-items {width: 375px;}
+  .listProduct .food-items img{width: 375px;}
 }
 
 .listProduct .food-items {
