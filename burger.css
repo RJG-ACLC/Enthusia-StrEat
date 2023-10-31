@@ -445,8 +445,8 @@ a.nav-link{
 }
 
 @media (max-width: 900px) {
-  .listProduct { grid-template-columns: repeat(1, 1fr);}
-  .listProduct {gap: 20px;}
+  .listProduct { grid-template-columns: repeat(1, 1fr);
+  margin: 0 0;}
 }
 .listProduct .food-items {
   position: relative;
