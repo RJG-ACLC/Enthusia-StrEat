@@ -1,15 +1,3 @@
-function updateWidth(){
-    viewport = document.querySelector("meta[name=viewport]");
-    if (window.orientation == 90 || window.orientation == -90) {
-        viewport.setAttribute('content', 'width=1401, initial-scale=0.34, maximum-scale=1.0, user-scalable=1');
-    }
-    else {
-        viewport.setAttribute('content', 'width=640, initial-scale=0.47, maximum-scale=1.0, user-scalable=1');
-    }
-}
-
-window.console = window.console || function(t) {};
-
 let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
@@ -18,7 +6,7 @@ let close = document.querySelector('.close');
 iconCart.addEventListener('click', function(){
     if(cart.style.right == '-100%'){
         cart.style.right = '0';
-        container.style.transform = 'translateX(-725px)';
+        container.style.transform = 'translateX(-700px)';
     }
     
     else{
@@ -63,7 +51,7 @@ function addDataToHTML(){
                 </div>
                 <p>${product.description}</p>
                 <button onclick="addCart(${product.id})">Add To Cart</button>
-            </div>`;
+            </div>`
 
             listProductHTML.appendChild(newProduct);
 
@@ -97,8 +85,8 @@ function addCart($idProduct){
         //I just increased the quantity
         listCart[$idProduct].quantity++;
     }
-    document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
-
+    let timeSave = "expires=Thu, 31 Dec 2025 23:59:59 UTC";
+    document.cookie = "listCart=" + JSON.stringify(listCart)+"; "+timeSave+"; path=/";
     addCartToHTML();
 }
 addCartToHTML();
@@ -140,8 +128,6 @@ function changeQuantity($idProduct, $type){
             break;
         case '-':
             listCart[$idProduct].quantity--;
-
-            // if quantity <= 0 then remove product in cart
             if(listCart[$idProduct].quantity <= 0){
                 delete listCart[$idProduct];
             }
@@ -153,5 +139,60 @@ function changeQuantity($idProduct, $type){
     // save new data in cookie
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
     // reload html view cart
+    addCartToHTML();
+
+    addCartToHTML();
+    function addCartToHTML(){
+        let listCartHTML = document.querySelector('.listCart');
+        listCartHTML.innerHTML ='';
+
+        let totalHTML = document.querySelector('.totalQUantity');
+        let totalQuantity = 0;
+
+        if(listCart){
+            listCart.forEach(product => {
+                let newCart = document.createElement('div');
+                newCart.classList.add('food-items');
+                newCart.innerHTML =
+                `<img src="${product.image}">
+                <div class="content">
+                  <div class="name">${product.name}</div>
+                  <div class="price">₱${product.price} /1 product</div>
+                </div>
+      
+            <div class="quantity">
+            <button onclick="changeQuantity(${product.id}, '-')">-</button>
+                 <span class="value">${product.quantity}</span>
+                 <button onclick="changeQuantity(${product.id}, '+')">+</button>
+                </div>`;
+                listCartHTML.appendChild(newCart);
+                totalQuantity = totalQuantity + product.quantity;
+            })
+        }
+    }
+    totalHTML.innerText = totalQuantity;
+
+
+}
+function changeQuantity($idProduct, $type){
+    switch ($type) {
+        case '+':
+            listCart[$idProduct].quantity++;
+            break;
+
+        case '-':
+        listCart[$idProduct].quantity--;
+        if(listCart[$idProduct].quantity <=0){
+            delete listCart[$idProduct];
+        }
+        break;
+
+    default:
+        break;
+
+    }
+    let timeSave = "expires=Thu, 31 Dec 2025 23:59:59 UTC";
+    document.cookie = "listCart=" + JSON.stringify(listCart)+"; "+timeSave+"; path=/";
+
     addCartToHTML();
 }
