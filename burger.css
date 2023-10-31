@@ -444,13 +444,6 @@ a.nav-link{
   .listProduct { grid-template-columns: repeat(2, 1fr);}
 }
 
-@media (max-width: 900px) {
-  .listProduct {grid-template-columns: repeat(1, 1fr);
-  margin: 0 0;}
-  .food-items {width: 375px;}
-  .listProduct .food-items img{width: 375px;}
-}
-
 .listProduct .food-items {
   position: relative;
 }
@@ -461,6 +454,13 @@ a.nav-link{
   position: relative;
   border-radius: 15px 15px 0 0;
 } 
+
+@media (max-width: 900px) {
+  .listProduct {grid-template-columns: repeat(1, 1fr);
+  margin: 0 0;}
+  .food-items {width: 375px;}
+  .listProduct .food-items img{width: 375px;}
+}
 
 .listProduct .food-items h5{
   font-weight: 600;
