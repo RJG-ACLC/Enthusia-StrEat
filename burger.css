@@ -425,7 +425,7 @@ a.nav-link{
   border-radius: 15px;
   box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.1);
   margin: 0 20px;
-  width: 380px;
+  width: 383px;
 }
 
 .listProduct {
@@ -454,7 +454,7 @@ a.nav-link{
 
 .listProduct .food-items img{
   height: 343px;
-  width: 380px;
+  width: 382.67px;
   position: relative;
   border-radius: 15px 15px 0 0;
 } 
