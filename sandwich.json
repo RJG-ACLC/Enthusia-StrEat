@@ -1,0 +1,30 @@
+[
+ {
+     "id": 5,
+     "name": "Hotdog Sandwich",
+     "price": 35,
+     "image": "https://gdurl.com/foVwa",
+     "description": "Contains: Hotdog,"
+ },
+ {
+     "id": 6,
+     "name": "Footlong",
+     "price": 60,
+     "image": "https://gdurl.com/0gxd",
+     "description": "Contains: Footlong,"
+ },
+ {
+     "id": 7,
+     "name": "Half Footlong w/ Fries",
+     "price": 60,
+     "image": "https://gdurl.com/Ic3dP",
+     "description": "Contains: Half Footlong, Fries,"
+ },
+ {
+    "id": 8,
+    "name": "Hungarian Sandwich",
+    "price": 70,
+    "image": "https://gdurl.com/E0OY",
+    "description": "Contains: Hungarian Hotdog,"
+ }
+]

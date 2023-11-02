@@ -1,693 +1,79 @@
 <!DOCTYPE html>
-<html>
-<head>  
-    <title>Enthusia StrEat - Hotdog Menu</title>
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
 
-    <meta charset="UTF-8">
-    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
-    <link rel="canonical" href="https://codepen.io/ann_/pen/dgVEaw">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="shortcut icon" href="images/fav-icon.png"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<title>Enthusia StrEat - Hotdog Menu</title>
 
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Global */
-* {
-  box-sizing: border-box;
-}
-body{
-  color: #090b08;
-  margin:  0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  background-color: #fbfb5b;
-}
-h1{
-  font-size: 1.7em;
-  font-weight: 700;
-  line-height: 1.5em;
-  text-transform: uppercase;
-}
-h2{
-  text-transform: uppercase;
-}
-h4{
-  font-size: .8em;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-h6{
-  font-weight: 500;
-}
-a{
-  text-decoration: none;
-  color: #090b08;
-}
-ul{
-  list-style: none;
-}
-section{
-  padding: 5.8em 2em 0;
-}
-.title{
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: 1em;
-}
-.title.title-right{
-  justify-content: flex-end;
-}
-.line{  
-  width: 3em;
-  height: 1px;
-  background-color: #000;
-  margin-right: 1em;
-}
-.line.line-right{
-  order: 2;
-  margin-right: 0;
-  margin-left: 1em;
-}
-.btn{
-  display: inline-block;
-  padding: .5em 1.5em;
-  border: solid 1px #090b08;  
-  transition: all .3s ease-in;
-
-}
-.btn:hover, .btn:focus{
-  transform: translate(0px, -2px);
-  -webkit-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
-  transition: all .3s ease-out; 
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
-#testimonials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width:100%;
-}
-.testimonial-heading{
-    letter-spacing: 1px;
-    margin: 30px 0px;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.testimonial-heading h1{
-    font-size: 2.2rem;
-    font-weight: 500;
-    background-color: #202020;
-    color: #ffffff;
-    padding: 10px 20px;
-}
-.testimonial-heading span{
-    font-size: 1.3rem;
-    color: #252525;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.testimonial-box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width:100%;
-}
-.testimonial-box{
-    width:500px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 15px;
-    cursor: pointer;
-}
-.profile-img{
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 10px;
-}
-.profile-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.profile{
-    display: flex;
-    align-items: center;
-}
-.name-user{
-    display: flex;
-    flex-direction: column;
-}
-.name-user strong{
-    color: #3d3d3d;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-}
-.name-user span{
-    color: #979797;
-    font-size: 0.8rem;
-}
-.reviews{
-    color: #f9d71c;
-}
-.box-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.client-comment p{
-    font-size: 0.9rem;
-    color: #4b4b4b;
-}
-.testimonial-box:hover{
-    transform: translateY(-10px);
-    transition: all ease 0.3s;
-}
- 
-@media(max-width:1060px){
-    .testimonial-box{
-        width:45%;
-        padding: 10px;
-    }
-}
-@media(max-width:790px){
-    .testimonial-box{
-        width:100%;
-    }
-    .testimonial-heading h1{
-        font-size: 1.4rem;
-    }
-}
-@media(max-width:340px){
-    .box-top{
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-    .reviews{
-        margin-top: 10px;
-    }
-}
-::selection{
-    color: #ffffff;
-    background-color: #252525;
-}
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background-color: #ffffff;
-        font-family: 'Poppins',sans-serif;
-    }
-
-    footer{
-        background-color: #fbfb5b;
-        margin-top: 250px;
-    }
-
-    .menu{
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
-        grid-gap: 20px 40px;
-    }
-    .heading{
-        background-color: #ffff3f;
-        color: #090b08;
-        margin-bottom: 30px;
-        padding: 120px 0 30px 0;
-        grid-column: 1/-1;
-        text-align: center;
-    }
-    .heading>h1{
-        font-weight: 400;
-        font-size: 30px;
-        letter-spacing: 10px;
-        margin-bottom: 10px;
-    }
-    .heading>h3{
-        font-weight: 600;
-        font-size: 22px;
-        letter-spacing: 5px;
-    }
-    .food-items{
-        display: grid;
-        position: relative;
-        grid-template-rows: auto 1fr;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        margin: 0 20px;
-    }
-    .food-items img{
-        position: relative;
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-    }
-    
-    .details{
-        padding: 20px 10px;
-        display: grid;
-        grid-template-rows: auto 1fr 50px;
-        grid-row-gap: 15px;
-    }
-    .details-sub{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .details-sub>h5{
-        font-weight: 600;
-        font-size: 18px;
-    }
-    .price{
-        text-align: right;
-    }
-    .details>p{
-        color: #6f6f6f;
-        font-size: 15px;
-        line-height: 28px;
-        font-weight: 400;
-        align-self: stretch;
-    }
-    .details>button{
-        background-color: #cb202d;
-        border: none;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 600;
-        border-radius: 5px;
-        width: 180px;
-    }    
-
-    .box{
-  display: block;
-  position: relative;
-  padding: 1.3em;
-  background-color: #fcf300;
-  text-align: center;
-  margin-bottom: 2em;
-}
-.box-overlay {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-	border: solid 3px #fff;
-	transform: translate(8px, 8px);
-  transition: all 1s ease;
-}
-.box:last-child{
-  margin-bottom: 5.8em;
-}
-.box:hover .box-overlay,
-.box:focus .box-overlay
-{
-  transform: translate(0px, 0px) scale(0.92, 0.8);
-}
-
-    #about{
-  background-color: #ffff3f;
-}
-section#about{
-  padding-bottom: 5.8em;
-}
-#about .text{
-  padding-top: 0;
-  margin-top: 0;
-  padding-bottom: 2em;
-}
-#about .text p{
-  padding-bottom: 0;
-  text-align: left;
-}
-.video-wrapper{
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  overflow: hidden;
-  height: 0;
-}
-.video-wrapper iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-    /* Contact Section */
-section#contact{
-  padding: 3em 2em .5em;
-}
-.form-wrapper:after,
-.contact-wrapper:after{
-  display: block;
-  content: "";
-  margin: 2em auto;
-  border-bottom: solid 1px #dadada;
-}
-form{
-  display: flex;
-}
-form input:first-child{
-  flex: 1 0 80%;
-  background-color: transparent;
-}
-form input:last-child{
-  flex: 1 0 20%;
-  border-left: 0;  
-  cursor: pointer;
-  background-color: #fcf300;
-  transition: all .25s ease;
-}
-#submit:hover {
-	background-color: #000;
-	color: #fff;
-  transition: all .25s ease;
-}
-input{
-  padding: 1em;
-  border: 1px solid #000;
-}
-.contact-wrapper .wrapper{
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.contact-wrapper .social-menu{
-  flex: 1 0 100%;
-  justify-content: center;
-}
-.contact-wrapper .social-menu li a {
-	font-size: 1.5em;
-  padding: 0;
-  margin: 0 1.5em 0 0;
-}
-.contact-wrapper a i{
-  width: 100%;
-  padding-bottom: .2em;
-}
-.contact-footer{
-  padding: 1em 0;
-  border: 1px solid #000;
-}
-.contact-footer:last-child{
-  border-left: 0;
-}
-.contact-footer:hover{
-  background-color: #f5d9d6;
-}
-.contact-tel{
-  flex: 1 0 50%;
-}
-.contact-email{
-  flex: 1 0 50%;
-}
-.copy-wrapper a{
-  font-weight: 700;
-}
-#contact .wrapper{
-    flex-wrap: wrap;
-  }
-  .form-wrapper, .contact-wrapper{
-    flex: 1 0 50%;
-    align-self: center;
-    padding: 0 1em;
-  }
-  .copy-wrapper{
-    flex: 1 0 100%;
-    padding: 0 1em;
-  }
-  .form-wrapper:after,
-  .contact-wrapper:after{
-    display: none;
-  }
-  .contact-footer{
-    border: 0;
-    padding: 0;
-    margin: .6em auto;
-    text-align: left;
-  }
-  .contact-footer:hover{
-    background-color: transparent;
-  }
-  .contact-wrapper a i{
-    width: auto;
-    padding-right: 1em;
-  }
-  .contact-wrapper .social-menu{
-    display: flex;
-    order: 3;
-    justify-content: flex-start;
-  }
-  .contact-wrapper .social-menu a i{
-    padding-right: 0;
-  }
-  .copy-wrapper:before{
-    display: block;
-    content: "";
-    margin: 2em auto;
-    border-bottom: solid 1px #dadada;
-  }
-@media(min-width: 992px){
-  /*  Global  */
-  section{
-    padding: 5.8em 7em 0;
-  }  
-  .title.title-left{
-    margin-left: -2.5em;
-  }
-  .title.title-right{
-    margin-right: -2.5em;
-  }
-  .line{
-    width: 5.5em;
-  }
-}
-
-@media(min-width: 768px){
-  /*  Global  */
-  .wrapper{
-    display: flex;
-  }
-  
-  /*  Header  */
-  .nav-brand img{
-    height: 10em;
-  }
-  .toggle-menu{
-    display: none;
-  }
-  .navbar{
-    display: flex;
-    position: relative;
-    height: auto;
-    width: auto;
-    background-color: transparent;
-    z-index: 1;
-  }
-  .menu{
-    flex-direction: row;
-    padding: 0;
-    justify-content: flex-end;
-  }
-  .social-menu{
-    display: none;
-  }
-  .menu li{
-    margin-top: 0;
-  }
-  a.nav-link{
-    margin-right: 3em;
-  }
-}
-
-@media(min-width: 320px){
-  
-}
-@media(min-width: 576px){
-  /*  Global  */
-  h1{
-    font-size: 2em;
-  }
-  
-  /*  Hero Section  */
-  .hero{
-    background-image: none;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .hero-img{
-    padding-top: 6.5em;
-  }
-  .hero-img img{
-    display: block;
-    width: 14em;
-    height: 400px;
-  }
-  .hero-text{
-    padding: 0 2em;
-  }
-  
-  /*  Featured Section  */
-  .text{
-    margin: 2em 2em auto;
-  }
-  
-  /*  Collections Section  */
-  #collections .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .box{
-    padding: 3.2em;
-  }
-  .box1{
-    flex: 1 0 47%;
-    margin-right: 1em;
-  }
-  .box2{
-    flex: 1 0 47%;
-  }
-  .box3{
-    flex: 2 0 100%;
-  }
-}
-
-@media(min-width: 1200px){
-  /*  Global  */
-  h1{
-    font-size: 2.4em;
-  }
-  section{
-    padding: 5.8em 11em 0;
-  }
-  
-  /*  Hero Section  */
-  .hero-img img{
-    width: 15.5em;
-  }
-  
-  /*  Featured Section  */
-  #featured .image{
-    margin-top: -4em;
-  }
-  
-  /*  About Section  */
-  #about .text{
-    padding-right: 3em;
-    padding-bottom: 0;
-  }
-  .video-wrapper{
-    margin: 0;
-  }
-}
-
-</style>
-
-<script>
-    window.console = window.console || function(t) {};
-  </script>
+<link rel="stylesheet" href="product.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+<link rel="canonical" href="https://codepen.io/ann_/pen/dgVEaw">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-<body>
-    <div class="menu">
-        <div class="heading">
-            <h1>Enthusia StrEat</h1>
-            <h3>&mdash; HOTDOG MENU &mdash; </h3>
-        </div>
-        <div class="food-items">
-            <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/394815877_716643803653212_8381759900680636509_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG0Vl60wXS3ytxWJIAYZHNhH9uWyQh2PkAf25bJCHY-QPhKyUtDZTP8UygtoEdoo2QrfEYmtkvfX8ObPYyPMYbG&_nc_ohc=bS8MPLGVdSAAX_s1G-F&_nc_ht=scontent.fmnl17-4.fna&oh=00_AfB3Zs-xrdcDSWSW4QIhwqPXWYiG8ZuHPg5s1MdslDo55Q&oe=653D7662" alt="Hotdog Sandwich">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Hotdog Sandwich</h5>
-                    <h5 class="price"> ₱35.00 </h5>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
-                <button>Add To Cart</button>
-            </div>
-        </div>
 
+<body>
+  <div class="menu">
+    <div class="heading">
+      <div class="container">
+        <h1>Enthusia StrEat </h1>
+        <h3>&mdash; HOTDOG MENU &mdash;</h3>
+      </div>
+      <div class="iconCart">
+        <img src="https://gdurl.com/CCWL" alt="Shopping Cart">
+       <div class="totalQuantity">0</div>
+      </div>
+   </div>
+
+   <div class="listProduct">
+    <div class="food-items">
+      <img src="https://gdurl.com/8Hys" alt="Burger Bite">
+        <h5>Burger Bite - 2pcs</h5>
+        <h5 class="price"> 60.00 </h5>
+    </div>
+  </div>
+
+    <div class="cart">
+      <h2>CART</h2>
+
+      <div class="listCart">
+      <div class="details">
         <div class="food-items">
-          <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/387601137_854570236111814_6918689426827999835_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=GfpAxwUbYqUAX_ybZFz&_nc_ht=scontent.fmnl17-2.fna&oh=03_AdTTfxmzVL4VlWoRBlrjuzjlf1bgg48ZxlfcvUHhha7ebA&oe=65501A44" alt="Footlong">
-          <div class="details">
-              <div class="details-sub">
-                  <h5>Footlong</h5>
-                  <h5 class="price"> ₱60.00 </h5>
-              </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
-              <button>Add To Cart</button>
+          <img src="https://gdurl.com/8Hys">
+          <div class="content">
+            <div class="name">Burger Bite - 2pcs</div>
+            <div class="price">₱55.00 / 1 product</div>
           </div>
       </div>
 
-        <div class="food-items">
-            <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/395182741_716643833653209_894878935426259112_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE7W4L68MXjynnmXc9b8REJ_1hJwguDKOL_WEnCC4Mo4nepzMmTlkWnZtVO3KzmOk0jJS5daJ7BQr4YGHyEAu-n&_nc_ohc=oiXK4UqY5-8AX_nY32s&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfDorrQRI4y0Ct0zR7XSkf8NTqglEdJQfFnGrGSxx5ycXA&oe=653CAAA2" alt="Hungarian Sandwich">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Hungarian Sandwich</h5>
-                    <h5 class="price"> ₱70.00 </h5>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam facilis, magni consectetur necessitatibus.</p>
-                <button>Add To Cart</button>
-            </div>
+      <div class="quantity">
+           <button>-</button>
+           <span class="value">3</span>
+           <button>+</button>
+          </div>
         </div>
+      </div>  
+      <div class="buttons">
+        <div class="close">CLOSE</div>
+        <div class="checkout">
+          <a href="checkout.html">
+            CHECKOUT
+          </a>
+        </div>  
+     </div>
+    </div> 
+  </div>
+  <footer>
 
-        <div class="food-items">
-            <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/394263333_716643780319881_8859754933266526957_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFTAmupueLuKpioSlNlACrc4cVD-Oj0E5XhxUP46PQTlbnfMzHyhQW5KyqnV63WPOTV0V-uci1BIjQCKMHgKlE0&_nc_ohc=gwcjXid00PoAX_MQuW7&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfCKEFjPM5JiZ2ZykXaHyWBYJfZMmvyogwm8v6ZoHWRRSw&oe=653C4F31" height="340px" alt="Half Footlong with Fries">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Half Footlong with Fries</h5>
-                    <h5 class="price"> ₱60.00 </h5>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                <button>Add To Cart</button>
-            </div>
-        </div>
-    </div>
-</body>
-
-<footer>
-<section id="contact">
+  <section id="contact">
     <div class="wrapper">
       <div class="form-wrapper">    
         <h4>Add More Beauty To Your Email</h4>
@@ -708,8 +94,12 @@ input{
           <a class="contact-footer contact-email" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/mfresado6%40gmail.com?compose=new"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send an email</a>
         </div>
       </div>
-      <div class="copy-wrapper">
     </div>
-</section>
+ </section>
+ 
 </footer>
+
+<script src="sandwich.js"></script>
+
+</body>
 </html>

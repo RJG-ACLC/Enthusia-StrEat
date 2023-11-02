@@ -1,0 +1,31 @@
+[
+ {
+     "id": 1,
+     "name": "Burger Bite - 2pcs",
+     "price": 60,
+     "image": "https://gdurl.com/8Hys",
+     "description": "Contains"
+ },
+ {
+
+     "id": 2,
+     "name": "Big Bite Burger",
+     "price": 65,
+     "image": "https://gdurl.com/6igS",
+     "description": "Contains:"
+ },
+ {
+     "id": 3,
+     "name": "Double Big Bite",
+     "price": 100,
+     "image": "https://gdurl.com/deUE",
+     "description": "Contains: Lettuce"
+ },
+ {
+     "id": 4,
+     "name": "Giga Bite Burger",
+     "price": 125,
+     "image": "https://gdurl.com/L_Eq",
+     "description": "Contains: Lettuce,"
+ }
+]
