@@ -1,0 +1,30 @@
+[
+ {
+     "id": 9,
+     "name": "Macaroni",
+     "price": 35,
+     "image": "https://gdurl.com/2dQLe",
+     "description": "Contains: Macaroni,"
+ },
+ {
+     "id": 10,
+     "name": "Palabok",
+     "price": 35,
+     "image": "https://gdurl.com/YQGR",
+     "description": "Contains: Noodles,"
+ },
+ {
+     "id": 11,
+     "name": "French Fries",
+     "price": 60,
+     "image": "https://gdurl.com/5RE8",
+     "description": "Contains: Fries,"
+ },
+ {
+     "id": 12,
+     "name": "Nachos",
+     "price": 80,
+     "image": "https://gdurl.com/I2sT",
+     "description": "Contains: Nachos,"
+ }
+]
