@@ -294,7 +294,7 @@ section#contact{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     border-bottom: 1px solid #7a7fe2;
-    padding-bottom: 20px;
+    padding-bottom: 120px;
 }
 
 .checkoutLayout .form h1,
@@ -316,11 +316,22 @@ section#contact{
     color: #fff;
 }
 
+input#comments {
+  height: 200%;
+  width: 206%;
+  color: #fff;
+}
+
 .checkoutLayout .right .return .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+}
+
+::placeholder {
+  color: #c0c0c0;
+  opacity: 1;
 }
 
 .checkoutLayout .right .return .row div:nth-child(2){
