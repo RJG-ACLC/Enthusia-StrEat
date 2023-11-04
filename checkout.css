@@ -297,6 +297,11 @@ a.nav-link{
   padding-bottom: 40px;
 }
 
+@media (max-width: 900px) {
+  .checkoutLayout {grid-template-columns: repeat(1, 1fr);}
+  .checkoutLayout .right .form{grid-template-columns: repeat (1, 1fr);}
+}
+
 .checkoutLayout .form h1,
 .checkoutLayout .form .group:nth-child(-n+3),
 .checkoutLayout .form .group:nth-last-child(-n+1) {
