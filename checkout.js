@@ -41,3 +41,11 @@ function addCartToHTML(){
     totalQuantityHTML.innerText = totalQuantity;
     totalPriceHTML.innerText = '₱' + totalPrice;
 }
+
+    function buttonCheckout() {
+        var listCartHTML = document.getElementsByClassName('.listCartHTML')[0]
+        while (listCartHTML.hasChildNodes()) {
+            listCartHTML.removeChild(listCartHTML.firstChild)
+        }
+        totalQuantity()
+    }

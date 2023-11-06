@@ -84,7 +84,6 @@ footer{
   justify-content: space-between;
 }
 
-
 .heading img {
   width: 60px;
 }
@@ -109,13 +108,12 @@ footer{
 
 .iconCart {
   position: relative;
-  z-index: 1;
   cursor: pointer;
 }
 
 .totalQuantity {
   position: absolute;
-  top: -10px;
+  top: -18px;
   right: 10px;
   font-size: x-large;
   background-color: #b31010;
@@ -128,6 +126,7 @@ footer{
   justify-content: center;
   align-items: center;
   transform: translateX(20px);
+  z-index: 1;
 }
     
 .details{
@@ -343,7 +342,7 @@ a.nav-link{
   right: -100%;
   width: 400px;
   height: 100vh;
-  background-color: #000;
+  background-color: #0E0F11;
   display: grid;
   grid-template-rows: 50px 1fr 50px;
   gap: 20px;
@@ -352,8 +351,19 @@ a.nav-link{
 
 .cart h2{
   color: #e8bc0e;
+  left: 40px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.cart .listCart {
   padding: 20px;
-  margin: 0;
+  overflow: auto;
+}
+
+.cart .listCart::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 .cart .listCart .food-items {
@@ -388,11 +398,6 @@ a.nav-link{
   text-align: center;
 }
 
-.cart .listCart {
-  padding: 20px;
-  overflow: auto;
-}
-
 .cart .buttons{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -412,7 +417,12 @@ a.nav-link{
   color: #fff;
 }
 
-.cart .buttons .checkout {
+.cart .buttons .checkout1 {
+  background-color: #000;
+  color: #000;
+}
+
+.cart .buttons .checkout2 {
   background-color: #e8bc0e;
   color: #000;
 }
@@ -541,6 +551,9 @@ a {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-family: none;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .sidebar a:hover {
@@ -555,6 +568,23 @@ a {
   margin-left: 50px;
 }
 
+.cart .closebtn {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 36px;
+  margin-right: 50px;
+  z-index: 1;
+  color: rgb(129, 129, 129);
+  font-style: normal;
+  font-family: none;
+  text-decoration: none;
+}
+
+.cart .closebtn:hover{
+  color: #f1f1f1;
+}
+
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -562,10 +592,6 @@ a {
   color: white;
   padding: 10px 15px;
   border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
 }
 
 #main {
@@ -576,4 +602,90 @@ a {
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+label {
+  font-size: 30px;
+  background-color: #111;
+  display: block;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  position: relative;
+  user-select: none;
+}
+
+label:before {
+  content: " ";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+  height:0;
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  transition: transform 0.5s;
+  transform-origin: 3px center;
+}
+
+.accordion div {
+  height:0;
+  overflow:hidden;
+  opacity:0;
+  transition: 0.2s;
+}
+
+input:checked ~ label:before {
+  transform: rotate(90deg)
+}
+
+input:checked ~ div {
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+}
+
+.separator a {
+  margin-right: 25px;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.closebtn{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    .separator a{ margin-bottom: 200%;
+  }}
+
+  to {
+    .separator a{ margin-bottom: 0%;
+  }}
+}
+
+.hidden a {
+  font-size: 18px;
+  font-family: none;
+  font-style: normal;
+  font-weight: bold;
+  color: #818181;
+  max-height: 15;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.sidebar img{
+  width: 150px;
+  height: 150px;
+}
+
+.sidebar input {
+  display: none;
+  -webkit-transition: height .5s;
+  transition: .5s;
+  height: 0;
+  overflow: hidden;
 }

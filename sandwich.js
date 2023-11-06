@@ -3,12 +3,60 @@ let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
 let close = document.querySelector('.close');
 
-iconCart.addEventListener('click', function(){
-    if(cart.style.right == '-100%'){
-        cart.style.right = '0';
-        container.style.transform = 'translateX(-700px)';
+function openNav() {
+    if (window.innerWidth > 1900 && window.innerWidth < 2400){
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    container.style.transform = 'translateX(500px)';
     }
-    
+
+    else if(window.innerWidth > 1200 && window.innerWidth < 1899){
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        container.style.transform = 'translateX(250px)';
+    }
+
+    else if(window.innerWidth > 900 && window.innerWidth < 1199){
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "0";
+        container.style.transform = 'translateX(125px)';
+    }
+
+    else if(window.innerWidth > 340 && window.innerWidth < 899){
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "0";
+        container.style.transform = 'translateX(0)';
+    }
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    container.style.transform = 'translateX(0)';
+}
+
+
+iconCart.addEventListener('click', function(){
+    if(cart.style.right = '-100%' && window.innerWidth > 1900 && window.innerWidth < 2400) {
+        cart.style.right = '0';
+        container.style.transform = 'translateX(-630px)';
+    }
+
+    else if(cart.style.right = '-100%' && window.innerWidth > 1200 && window.innerWidth < 1900) {
+        cart.style.right = '0';
+        container.style.transform = 'translateX(-400px)'
+    }
+
+    else if(cart.style.right = '-100%' && window.innerWidth > 900 && window.innerWidth < 1200) {
+        cart.style.right = '0';
+        container.style.transform = 'translateX(-160px)'
+    }
+
+    else if(cart.style.right = '-100%' && window.innerWidth > 320 && window.innerWidth < 900) {
+        cart.style.right = '0';
+        container.style.transform = 'translateX(0)';
+    }
+
     else{
         cart.style.right = '-100%';
         container.style.transform = 'translateX(0)';

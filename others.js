@@ -30,7 +30,7 @@ function openNav() {
         container.style.transform = 'translateX(0)';
     }
 }
- 
+
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
@@ -193,7 +193,7 @@ function changeQuantity($idProduct, $type){
         let listCartHTML = document.querySelector('.listCart');
         listCartHTML.innerHTML ='';
 
-        let totalHTML = document.querySelector('.totalQUantity');
+        let totalHTML = document.querySelector('.totalQuantity');
         let totalQuantity = 0;
 
         if(listCart){

@@ -23,6 +23,31 @@
 <body>
   <div class="menu">
     <div class="heading">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <img src="https://gdurl.com/ss9y">
+        <div class="separator">
+          <a href="#">Home</a>
+          <div class="accordion">
+            <input type="checkbox" id="trigger1">
+            <label for="trigger1" style="color: #818181; font-weight: bold; font-family: none; display: block; font-size: 25px;">Menu</label>
+            <div class="hidden"><a href="burger_menu.html">Burger Menu</a></div>
+            <div class="hidden"><a href="hotdog_menu.html">Hotdog Menu</a></div>
+            <div class="hidden"><a href="others.html">Others</a></div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" id="trigger2">
+            <label for="trigger2" style="color: #818181; font-weight: bold; font-family: none; display: block; font-size: 25px;">Check Out</label>
+            <div class="hidden"><a href="order.html">Order</a> </div>
+            <div class="hidden"><a href="pickup.html">Pick Up</a> </div>
+          </div>
+          <a href="#">Contact</a>
+       </div>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+      </div>
       <div class="container">
         <h1>Enthusia StrEat </h1>
         <h3>&mdash; HOTDOG MENU &mdash;</h3>
@@ -35,22 +60,23 @@
 
    <div class="listProduct">
     <div class="food-items">
-      <img src="https://gdurl.com/8Hys" alt="Burger Bite">
-        <h5>Burger Bite - 2pcs</h5>
-        <h5 class="price"> 60.00 </h5>
+      <img src="https://gdurl.com/foVwa" alt="Hotdog Sandwich">
+        <h5>Hotdog Sandwich</h5>
+        <h5 class="price"> 35.00 </h5>
     </div>
   </div>
 
     <div class="cart">
+      <a href="javascript:void(0)" class="closebtn close" onclick="closeNav()">×</a>
       <h2>CART</h2>
 
       <div class="listCart">
       <div class="details">
         <div class="food-items">
-          <img src="https://gdurl.com/8Hys">
+          <img src="https://gdurl.com/foVwa" alt="Hotdog Sandwich">
           <div class="content">
-            <div class="name">Burger Bite - 2pcs</div>
-            <div class="price">₱55.00 / 1 product</div>
+            <div class="name">Hotdog Sandwich</div>
+            <div class="price">₱35.00 / 1 product</div>
           </div>
       </div>
 
@@ -62,10 +88,14 @@
         </div>
       </div>  
       <div class="buttons">
-        <div class="close">CLOSE</div>
-        <div class="checkout">
-          <a href="checkout.html">
-            CHECKOUT
+        <div class="checkout1">
+          <a href="pickup.html">
+            PICK UP!
+          </a>
+        </div>
+        <div class="checkout2">
+          <a href="order.html">
+            ORDER NOW!
           </a>
         </div>  
      </div>

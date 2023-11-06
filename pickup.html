@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="pickup.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
     <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
@@ -22,14 +22,14 @@
     <div class="heading">
         <div class="container">
           <h1>Enthusia StrEat </h1>
-          <h3>&mdash; CHECKOUT &mdash;</h3>
+          <h3>&mdash; PICK UP &mdash;</h3>
         </div>
     </div>
 
 <div class="container">
     <div class="checkoutLayout">
         <div class="returnCart">
-            <a href="javascript:history.back()"> ⮜ Keep Shopping</a>
+            <a href="javascript:history.back()"> <i class="arrow left"></i>⮜ Keep Shopping</a>
             <h1>List of Products in Your Cart</h1>
             <div class="list">
                 <div class="item">
@@ -65,24 +65,14 @@
                 </div>
     
                 <div class="group">
-                    <label for="country">Region</label>
-                    <select name="country" id="country" required>
-                        <option value="">Choose..</option>
-                        <option value="">Luzon</option>
+                    <label for="country" type="date">Date</label>
+                    <input type="date" id="date" required>
                     </select>
                 </div>
 
                 <div class="group">
-                    <label for="city">City</label>
-                    <select name="city" id="city" required>
-                        <option value="">Choose..</option>
-                        <option value="">Antipolo</option>
-                        <option value="">Caloocan</option>
-                        <option value="">Makati</option>
-                        <option value="">Mandaluyong</option>
-                        <option value="">Manila</option>
-                        <option value="">Marikina</option>
-                        <option value="">Meycauayan</option>
+                    <label for="city">Time</label>
+                    <input type="time" id="time">
                     </select>
                 </div>
 

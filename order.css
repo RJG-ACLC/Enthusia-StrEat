@@ -371,6 +371,7 @@ a.nav-link{
 .returnCart .list .item img{
   height: 90px;
   width: 100px;
+  border-radius: 20px;
 }
 
 .returnCart .list .item{
@@ -379,7 +380,7 @@ a.nav-link{
   align-items: center;
   gap: 20px;
   margin-bottom: 30px;
-  padding: 0 10px;
+  padding: 0 5px;
   box-shadow: 0 10px 20px #5555;
   border-radius: 20px;
 }
