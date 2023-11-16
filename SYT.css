@@ -13,7 +13,7 @@ body {
 	width: 400%;
 	left: 50%;
 	top: 50%;
-	background: #FE5F55;
+	background: #ffff3f;
 	transform: translate(-50%, -50%) rotate(-30deg);
 }
 
@@ -69,7 +69,7 @@ body {
 .card .illustration {
 	position: relative;
 	height: 13rem;
-	background: #fb8d33;
+	background: #EDF9F8;
 	overflow: hidden;
 }
 	

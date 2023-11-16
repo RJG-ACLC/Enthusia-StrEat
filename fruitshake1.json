@@ -1,0 +1,86 @@
+[
+    {
+        "id": 15,
+        "name": "Overload Halo-halo",
+        "price": 35,
+        "image": "https://gdurl.com/Fdn6",
+        "description": "Contains: Ube,"
+    },
+    {
+        "id": 16,
+        "name": "Mango Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/E8Uh",
+        "description": "Contains: Fresh Mango,"
+    },
+    {
+        "id": 17,
+        "name": "Avocado Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/mBn6k",
+        "description": "Contains: Fresh Avocado,"
+    },
+    {
+        "id": 18,
+        "name": "Strawberry Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/v_x4",
+        "description": "Contains: Fresh Strawberry,"
+    },
+    {
+        "id": 19,
+        "name": "Banana Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/yDvG",
+        "description": "Contains: Fresh Banana,"
+    },
+    {
+        "id": 20,
+        "name": "Grapes Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/VFGT",
+        "description": "Contains: Fresh Grapes,"
+    },
+    {
+        "id": 21,
+        "name": "Guyabano Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/Nbdu",
+        "description": "Contains: Fresh Guyabano,"
+    },
+    {
+        "id": 22,
+        "name": "Melon Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/0MY3",
+        "description": "Contains: Fresh Melon,"
+    },
+    {
+        "id": 23,
+        "name": "Buko Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/Jo2M",
+        "description": "Contains: Fresh Buko,"
+    },
+    {
+        "id": 24,
+        "name": "Chocolate Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/viX8",
+        "description": "Contains: Chocolate,"
+    },
+    {
+        "id": 25,
+        "name": "Oreo Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/5Rks",
+        "description": "Contains: Oreo,"
+    },
+    {
+        "id": 26,
+        "name": "Cappuccino Shake - Large",
+        "price": 35,
+        "image": "https://gdurl.com/nR42",
+        "description": "Contains: Cappuccino,"
+    }
+   ]

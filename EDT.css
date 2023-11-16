@@ -14,7 +14,7 @@ body {
 	width: 400%;
 	left: 50%;
 	top: 50%;
-	background: #FE5F55;
+	background: #ffff3f;
 	transform: translate(-50%, -50%) rotate(-30deg);
 }
 
@@ -136,7 +136,7 @@ body {
 	position: absolute;
 	height: 0.5rem;
 	width: 3rem;
-	background: #FE5F55;
+	background: #ffff3f;
 	transform: translate(-0.5rem, 0.2rem) rotate(-30deg);
 }
 
