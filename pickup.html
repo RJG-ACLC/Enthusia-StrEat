@@ -49,37 +49,27 @@
             <h1>Checkout</h1>
 
             <div class="form">
-                <div class="group">
+                <form action="SYT.html">
+
                     <label for="name">Full Name</label>
-                    <input type="text" name="name" id="name"  required>
-                </div>
+                    <input type="text" name="name" id="name" required>
+
+
+                    <label for="phone">Contact Number</label>
+                    <input type="text" name="phone" id="phone" required>
     
-                <div class="group">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" required>
-                </div>
-    
-                <div class="group">
-                    <label for="address">Contact Number</label>
-                    <input type="text" name="phone" id="phone">
-                </div>
-    
-                <div class="group">
-                    <label for="country" type="date">Date</label>
+
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" required>  
+
+                    <label for="date">Date</label>
                     <input type="date" id="date" required>
-                    </select>
-                </div>
 
-                <div class="group">
-                    <label for="city">Time</label>
-                    <input type="time" id="time">
-                    </select>
-                </div>
+                    <label for="time">Time</label>
+                    <input type="time" id="time" required>
 
-                <div class="group">
                     <label for="comments">Additional Comments</label>
-                    <input type="text" name="comments" id="comments" style="height: 150px;" placeholder="(e.g. free pearls, no cucumber, more cucumber, no lettuce, less cheese, etc.)" />
-                </div>           
+                    <input type="text" name="comments" id="comments" style="height: 150px;" placeholder="(e.g. free pearls, no cucumber, more cucumber, no lettuce, less cheese, etc.)" />         
             </div>
             <div class="return">
                 <div class="row">
@@ -90,11 +80,11 @@
                     <div>Total Price</div>
                     <div class="totalPrice">₱900</div>
                 </div>
-            </div>
+            </div> 
             <a href="SYT.html">
-            <button class="buttonCheckout">CHECKOUT</button>
-            </a>
-        </div>
+                <button class="buttonCheckout">CHECKOUT</button>
+            </a> 
+        </form> 
     </div>
 </div>
 
@@ -103,7 +93,7 @@
     <section id="contact">
       <div class="wrapper">
         <div class="form-wrapper">    
-          <h4>Add More Beauty To Your Email</h4>
+          <h4>Add More Flavor To Your Email</h4>
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input type="email" id="email" name="email" placeholder="Your email" required>
             <input type="submit" id="submit" value="OK" class="submit">

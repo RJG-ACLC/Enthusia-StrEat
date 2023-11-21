@@ -49,30 +49,25 @@
             <h1>Checkout</h1>
 
             <div class="form">
-                <div class="group">
+                <form action="EDT.html">
+
                     <label for="name">Full Name</label>
-                    <input type="text" name="name" id="name"  required>
-                </div>
-    
-                <div class="group">
+                    <input type="text" name="name" id="name" required>
+
+
                     <label for="phone">Contact Number</label>
                     <input type="text" name="phone" id="phone" required>
-                </div>
     
-                <div class="group">
+
                     <label for="address">Address</label>
-                    <input type="text" name="address" id="address">
-                </div>
-    
-                <div class="group">
-                    <label for="country">Region</label>
-                    <select name="country" id="country" required>
+                    <input type="text" name="address" id="address" required>  
+
+                    <label for="region">Region</label>
+                    <select name="region" id="region" required>
                         <option value="">Choose..</option>
                         <option value="">Luzon</option>
                     </select>
-                </div>
 
-                <div class="group">
                     <label for="city">City</label>
                     <select name="city" id="city" required>
                         <option value="">Choose..</option>
@@ -84,12 +79,9 @@
                         <option value="">Marikina</option>
                         <option value="">Meycauayan</option>
                     </select>
-                </div>
 
-                <div class="group">
                     <label for="comments">Additional Comments</label>
-                    <input type="text" name="comments" id="comments" style="height: 150px;" placeholder="(e.g. free pearls, no cucumber, more cucumber, no lettuce, less cheese, etc.)" />
-                </div>           
+                    <input type="text" name="comments" id="comments" style="height: 150px;" placeholder="(e.g. free pearls, no cucumber, more cucumber, no lettuce, less cheese, etc.)" />         
             </div>
             <div class="return">
                 <div class="row">
@@ -100,10 +92,11 @@
                     <div>Total Price</div>
                     <div class="totalPrice">₱900</div>
                 </div>
-            </div>
+            </div> 
             <a href="EDT.html">
-            <button class="buttonCheckout">CHECKOUT</button>
-            </a>
+                <button class="buttonCheckout">CHECKOUT</button>
+            </a> 
+        </form>         
         </div>
     </div>
 </div>

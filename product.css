@@ -689,3 +689,16 @@ input:checked ~ div {
   height: 0;
   overflow: hidden;
 }
+
+input#email:-webkit-autofill, 
+input#email:-webkit-autofill:hover,
+input#email:-webkit-autofill:focus,
+input#email:-webkit-autofill:active  {
+  transition: background-color 500000s;
+  -webkit-text-fill-color: #000 !important;
+}
+
+input#email:-webkit-autofill::selection {
+  transition: background-color 500000s;
+  -webkit-text-fill-color: #fff !important;
+}

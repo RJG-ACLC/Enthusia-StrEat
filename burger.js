@@ -241,3 +241,8 @@ function changeQuantity($idProduct, $type){
 
     addCartToHTML();
 }
+
+document.getElementById('form').addEventListener('submit', function(e) {
+    if(!validate())
+        e.preventDefault();
+    }); 
