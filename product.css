@@ -609,7 +609,7 @@ label {
   background-color: #111;
   display: block;
   cursor: pointer;
-  padding: 10px 10px 10px 10px;
+  padding: 8px 10px 10px 10px;
   position: relative;
   user-select: none;
 }

@@ -2,77 +2,77 @@
  {
     "id": 27,
     "name": "Mango Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/LLOy",
     "description": "Contains: Fresh Mango,"
  },
  {
     "id": 17,
     "name": "Avocado Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/NmIo",
     "description": "Contains: Fresh Avocado,"
  },
  {
     "id": 18,
     "name": "Strawberry Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/xrnTa",
     "description": "Contains: Fresh Strawberry,"
  },
 {
     "id": 19,
     "name": "Banana Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/R_Hk",
     "description": "Contains: Fresh Banana,"
  },
  {
     "id": 20,
     "name": "Grapes Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/Gvfi",
     "description": "Contains: Fresh Grapes,"
  },
 {
     "id": 21,
     "name": "Guyabano Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/e4km",
     "description": "Contains: Fresh Guyabano,"
  },
  {
     "id": 22,
     "name": "Melon Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/lq6i",
     "description": "Contains: Fresh Melon,"
  },
  {
     "id": 23,
     "name": "Buko Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/beiP",
     "description": "Contains: Fresh Buko,"
  },
  {
     "id": 24,
     "name": "Chocolate Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/5Dmp",
     "description": "Contains: Chocolate,"
  },
  {
     "id": 25,
     "name": "Oreo Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/I-Jt",
     "description": "Contains: Oreo,"
  },
  {
     "id": 26,
     "name": "Cappuccino Shake - Small",
-    "price": 35,
+    "price": 30,
     "image": "https://gdurl.com/D0jK",
     "description": "Contains: Cappuccino,"
  }
