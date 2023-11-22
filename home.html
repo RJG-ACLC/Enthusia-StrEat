@@ -2,723 +2,21 @@
 <html lang="en" >
 
 <head>
-<meta charset="UTF-8">
-    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
-    <link rel="canonical" href="https://codepen.io/ann_/pen/dgVEaw">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="shortcut icon" href="images/fav-icon.png"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-  
-<style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* Global */
-* {
-  box-sizing: border-box;
-}
-body{
-  color: #090b08;
-  margin:  0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  background-color: #fbfb5b;
-}
-h1{
-  font-size: 1.7em;
-  font-weight: 700;
-  line-height: 1.5em;
-  text-transform: uppercase;
-}
-h2{
-  text-transform: uppercase;
-}
-h4{
-  font-size: .8em;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-a{
-  text-decoration: none;
-  color: #090b08;
-}
-ul{
-  list-style: none;
-}
-section{
-  padding: 5.8em 2em 0;
-}
-.title{
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: 1em;
-}
-.title.title-right{
-  justify-content: flex-end;
-}
-.line{  
-  width: 3em;
-  height: 1px;
-  background-color: #000;
-  margin-right: 1em;
-}
-.line.line-right{
-  order: 2;
-  margin-right: 0;
-  margin-left: 1em;
-}
-.btn{
-  display: inline-block;
-  padding: .5em 1.5em;
-  border: solid 1px #090b08;  
-  transition: all .3s ease-in;
-
-}
-.btn:hover, .btn:focus{
-  transform: translate(0px, -2px);
-  -webkit-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
-  transition: all .3s ease-out; 
-}
-
-/* Header */
-header{
-  display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: space-around;
-  z-index: 1;
-}
-header:before{
-  content: "";
-  position: absolute;
-  background-color: #fbfb5b;
-  width: 100%;
-  height: 68%;
-  z-index: -1;
-  -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
-  -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
-}
-.nav-brand img{
-  width: auto;
-  height: 7.5em;
-}
-.toggle-menu{
-  display: block;
-  font-size: 1.2em;
-  align-self: center;
-  cursor: pointer;
-}
-input[type="checkbox"]{
-  display: none;
-}
-input[type="checkbox"]:hover ~ .toggle-menu,
-input[type="checkbox"]:checked ~ .toggle-menu
-{
-  border-bottom: solid 1px #090b08;
-}
-input[type="checkbox"]:checked ~ .navbar{
-  display: flex;
-  flex-direction: column;
-}
-.navbar{
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-color: #ffd60a;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: -2;
-}
-.menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 4em 0 0;
-}
-a.nav-link{
-  margin-right: 0;
-}
-a.nav-link:hover,
-a.nav-link:active,
-a.nav-link:focus{
-  border-bottom: solid 1.8px #090b08;
-}
-.menu li{
-  margin-top: 3em;
-}
-.social-menu{
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-}
-.social-menu li a{
-  margin: 0 .5em;
-  padding: .5em;
-}
-.social-menu li a{
-  font-size: 1.2em;
-}
-.social-menu li a:hover,
-.social-menu li a:active,
-.social-menu li a:focus
-{
-  border-bottom: solid 1px #000;
-}
-
-/* Hero Section */
-.hero {
-	display: flex;
-	height: 100vh;
-	align-items: center;
-	background: #ffff3f url("https://i.postimg.cc/9fTzqwtw/flower2.png") no-repeat right bottom;
-}
-.hero-img img{
-  display: none;
-}
-.hero-text{
-  padding: 0 2em 7.5em;
-}
-
-/* Featured Section */
-#featured .image img{
-  width: auto;
-  height: auto;
-  padding-left: 10%;
-}
-.text{
-  text-align: center;
-  padding-top: 1em;
-}
-.text p{
-  text-align: justify;
-  padding-bottom: 1em;
-  line-height: 1.4em;
-}
-
-/* Collections Section */
-.box{
-  display: block;
-  position: relative;
-  padding: 1.3em;
-  background-color: #fcf300;
-  text-align: center;
-  margin-bottom: 2em;
-}
-.box-overlay {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-	border: solid 3px #fff;
-	transform: translate(8px, 8px);
-  transition: all 1s ease;
-}
-.box:last-child{
-  margin-bottom: 5.8em;
-}
-.box:hover .box-overlay,
-.box:focus .box-overlay
-{
-  transform: translate(0px, 0px) scale(0.92, 0.8);
-}
-
-/* About Section */
-#about{
-  background-color: #ffff3f;
-}
-section#about{
-  padding-bottom: 5.8em;
-}
-#about .text{
-  padding-top: 0;
-  margin-top: 0;
-  padding-bottom: 2em;
-}
-#about .text p{
-  padding-bottom: 0;
-  text-align: left;
-}
-.video-wrapper{
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  overflow: hidden;
-  height: 0;
-}
-.video-wrapper iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Contact Section */
-section#contact{
-  padding: 3em 2em .5em;
-}
-.form-wrapper:after,
-.contact-wrapper:after{
-  display: block;
-  content: "";
-  margin: 2em auto;
-  border-bottom: solid 1px #dadada;
-}
-form{
-  display: flex;
-}
-form input:first-child{
-  flex: 1 0 80%;
-  background-color: transparent;
-}
-form input:last-child{
-  flex: 1 0 20%;
-  border-left: 0;  
-  cursor: pointer;
-  background-color: #fcf300;
-  transition: all .25s ease;
-}
-#submit:hover {
-	background-color: #000;
-	color: #fff;
-  transition: all .25s ease;
-}
-input{
-  padding: 1em;
-  border: 1px solid #000;
-}
-.contact-wrapper .wrapper{
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.contact-wrapper .social-menu{
-  flex: 1 0 100%;
-  justify-content: center;
-}
-.contact-wrapper .social-menu li a {
-	font-size: 1.5em;
-  padding: 0;
-  margin: 0 1.5em 0 0;
-}
-.contact-wrapper a i{
-  width: 100%;
-  padding-bottom: .2em;
-}
-.contact-footer{
-  padding: 1em 0;
-  border: 1px solid #000;
-}
-.contact-footer:last-child{
-  border-left: 0;
-}
-.contact-footer:hover{
-  background-color: #f5d9d6;
-}
-.contact-tel{
-  flex: 1 0 50%;
-}
-.contact-email{
-  flex: 1 0 50%;
-}
-.copy-wrapper a{
-  font-weight: 700;
-}
-
-/* Responsive Style */
-@media(min-width: 320px){
-  
-}
-@media(min-width: 576px){
-  /*  Global  */
-  h1{
-    font-size: 2em;
-  }
-  
-  /*  Hero Section  */
-  .hero{
-    background-image: none;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .hero-img{
-    padding-top: 6.5em;
-  }
-  .hero-img img{
-    display: block;
-    width: 14em;
-    height: 400px;
-  }
-  .hero-text{
-    padding: 0 2em;
-  }
-  
-  /*  Featured Section  */
-  .text{
-    margin: 2em 2em auto;
-  }
-  
-  /*  Collections Section  */
-  #collections .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .box{
-    padding: 3.2em;
-  }
-  .box1{
-    flex: 1 0 47%;
-    margin-right: 1em;
-  }
-  .box2{
-    flex: 1 0 47%;
-  }
-  .box3{
-    flex: 2 0 100%;
-  }
-  
-  /*  About Section  */
-  .video-wrapper{
-    margin: 0 2em;
-  }
-}
-@media(min-width: 768px){
-  /*  Global  */
-  .wrapper{
-    display: flex;
-  }
-  
-  /*  Header  */
-  .nav-brand img{
-    height: 10em;
-  }
-  .toggle-menu{
-    display: none;
-  }
-  .navbar{
-    display: flex;
-    position: relative;
-    height: auto;
-    width: auto;
-    background-color: transparent;
-    z-index: 1;
-  }
-  .menu{
-    flex-direction: row;
-    padding: 0;
-    justify-content: flex-end;
-  }
-  .social-menu{
-    display: none;
-  }
-  .menu li{
-    margin-top: 0;
-  }
-  a.nav-link{
-    margin-right: 3em;
-  }
-  
-  /*  Featured Section  */  
-  .text{
-    text-align: left;    
-    margin: 0 0 auto 4em;
-  }
-  #featured .text{
-    flex: 1;
-    order: 1;
-  }
-  #featured .image{
-    flex: 1 0 12em;
-    order: 2;
-  }
-  
-  /*  Collections Section  */
-  #collections .wrapper{
-    margin: 0 4em;
-  }
-  
-  /*  About Section  */
-  #about .wrapper{
-    display: block;
-  }
-  #about .text{
-    margin-right: 4em;
-  }
-  .video-wrapper{
-    margin: auto 4em;
-  }
-  
-  /* Contact Section  */
-  #contact .wrapper{
-    flex-wrap: wrap;
-  }
-  .form-wrapper, .contact-wrapper{
-    flex: 1 0 50%;
-    align-self: center;
-    padding: 0 1em;
-  }
-  .copy-wrapper{
-    flex: 1 0 100%;
-    padding: 0 1em;
-  }
-  .form-wrapper:after,
-  .contact-wrapper:after{
-    display: none;
-  }
-  .contact-footer{
-    border: 0;
-    padding: 0;
-    margin: .6em auto;
-    text-align: left;
-  }
-  .contact-footer:hover{
-    background-color: transparent;
-  }
-  .contact-wrapper a i{
-    width: auto;
-    padding-right: 1em;
-  }
-  .contact-wrapper .social-menu{
-    display: flex;
-    order: 3;
-    justify-content: flex-start;
-  }
-  .contact-wrapper .social-menu a i{
-    padding-right: 0;
-  }
-  .copy-wrapper:before{
-    display: block;
-    content: "";
-    margin: 2em auto;
-    border-bottom: solid 1px #dadada;
-  }
-}
-@media(min-width: 992px){
-  /*  Global  */
-  section{
-    padding: 5.8em 7em 0;
-  }  
-  .title.title-left{
-    margin-left: -2.5em;
-  }
-  .title.title-right{
-    margin-right: -2.5em;
-  }
-  .line{
-    width: 5.5em;
-  }
-  
-  /*  Hero Section  */
-  .hero-img img{
-    width: 14.5em;
-  }
-  
-  /*  Featured Section  */
-  #featured .image{
-    margin-top: -2em;
-  }
-  
-  /* About Section  */
-  #about .wrapper{
-    display: flex;
-  }
-  #about .text{
-    flex: 1 0 40%;
-    margin-right: 1em;
-    padding-bottom: 0;
-  }
-  .video-wrapper{
-    flex: 2 0 55%;
-    padding-bottom: 33.25%;
-    align-self: center;
-    margin: 1.4em 0;        
-  }
-  .contact-tel{
-    flex-basis: 20%;
-  }
-}
-@media(min-width: 1200px){
-  /*  Global  */
-  h1{
-    font-size: 2.4em;
-  }
-  section{
-    padding: 5.8em 11em 0;
-  }
-  
-  /*  Hero Section  */
-  .hero-img img{
-    width: 15.5em;
-  }
-  
-  /*  Featured Section  */
-  #featured .image{
-    margin-top: -4em;
-  }
-  
-  /*  About Section  */
-  #about .text{
-    padding-right: 3em;
-    padding-bottom: 0;
-  }
-  .video-wrapper{
-    margin: 0;
-  }
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
-#testimonials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width:100%;
-}
-.testimonial-heading{
-    letter-spacing: 1px;
-    margin: 30px 0px;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.testimonial-heading h1{
-    font-size: 2.2rem;
-    font-weight: 500;
-    background-color: #202020;
-    color: #ffffff;
-    padding: 10px 20px;
-}
-.testimonial-heading span{
-    font-size: 1.3rem;
-    color: #252525;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.testimonial-box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width:100%;
-}
-.testimonial-box{
-    width:500px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 15px;
-    cursor: pointer;
-}
-.profile-img{
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 10px;
-}
-.profile-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.profile{
-    display: flex;
-    align-items: center;
-}
-.name-user{
-    display: flex;
-    flex-direction: column;
-}
-.name-user strong{
-    color: #3d3d3d;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-}
-.name-user span{
-    color: #979797;
-    font-size: 0.8rem;
-}
-.reviews{
-    color: #f9d71c;
-}
-.box-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.client-comment p{
-    font-size: 0.9rem;
-    color: #4b4b4b;
-}
-.testimonial-box:hover{
-    transform: translateY(-10px);
-    transition: all ease 0.3s;
-}
- 
-@media(max-width:1060px){
-    .testimonial-box{
-        width:45%;
-        padding: 10px;
-    }
-}
-@media(max-width:790px){
-    .testimonial-box{
-        width:100%;
-    }
-    .testimonial-heading h1{
-        font-size: 1.4rem;
-    }
-}
-@media(max-width:340px){
-    .box-top{
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-    .reviews{
-        margin-top: 10px;
-    }
-}
-::selection{
-    color: #ffffff;
-    background-color: #252525;
-}
-
-
-
-</style>
-
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+  <link rel="canonical" href="https://codepen.io/ann_/pen/dgVEaw">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link href='home.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   <script>
-  window.console = window.console || function(t) {};
-</script>
+    window.console = window.console || function(t) {};
+  </script>
 
   
   
@@ -729,8 +27,8 @@ a{
 
 <header id="header">
   <!--  Brand Logo  -->
-  <a class="nav-brand" href="" target="_blank">
-    <img id="header-img" src="F:\Enthusia StrEat\Logo.png" alt="Pixel Skincare">
+  <a class="nav-brand" href="home.html">
+    <img id="header-img" src="https://gdurl.com/ss9y" alt="Enthusia StrEat Logo">
   </a>
   
   <!--  Toggle Menu for Mobile  -->
@@ -741,9 +39,9 @@ a{
   <!--  Menus  -->
   <nav id="nav-bar" class="navbar">
     <ul class="menu">
-      <li><a class="nav-link" href="#hero">New in!</a></li>
-      <li><a class="nav-link" href="#featured">Menu</a></li>
-      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#hero">Welcome!</a></li>
+      <li><a class="nav-link" href="#preview">Menu</a></li>
+      <li><a class="nav-link" href="#about">About Us</a></li>
       <li><a class="nav-link" href="#feedback">Feedback</a></li>
       <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
@@ -760,51 +58,51 @@ a{
 <section id="hero">
  <div class="hero">
   <div class="hero-img">
-    <img src="file:///F:/Enthusia%20StrEat/bg.jpg" alt="Pixel Skincare">
+    <img src="https://gdurl.com/SRpn" alt="Front Page Picture">
   </div>
   <div class="hero-text">
     <h1>Your cravings</br> On the Go!</h1>
-    <a href="#featured" class="btn">Explore</a>
+    <a href="#preview" class="btn">Explore</a>
   </div>
  </div>
 </section>
 
 <!-- Featured Section -->
-<section id="featured">
-  <div class="title title-left">
-    <span class="line"></span><h3>SNACK AND SNACK!</h3>
-  </div>
-  <div class="wrapper">
-    <div class="image">
-      <img src="F:\Enthusia StrEat\Shake.jpg" alt="Pixel Facial Cream">
-    </div>
-    <div class="text">
-      <h2>FRESH FRUIT SHAKE</h2>
-      <p>Savor the delightful medley of nature's finest fruits in our refreshing fruit shake, where every sip is a burst of diverse, fresh flavors.</p>
-      <a href="#" class=btn>Details</a>
-    </div>
-  </div>
-</section>
-
-<!-- Collection Section -->
-<section id="collections">
+<section id="preview">
   <div class="title title-right">
-    <span class="line line-right"></span><h3>Menu</h3>
+    </span><h3>SNACK AND SNACK!</h3> <span class="line"></span>
   </div>
   <div class="wrapper">
-    <a class="box box1" href="#">
-      <h4>Burgers</h4>
-      <div class="box-overlay"></div>
-    </a>
-    <a class="box box2" href="#">
-      <h4>Hotdogs</h4>
-      <div class="box-overlay"></div>
-    </a>
-    <a class="box box3" href="#">
-      <h4>Other sides</h4>
-      <div class="box-overlay"></div>
-    </a>
+    <div class="container">
+      <div class="image">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="https://gdurl.com/8Hys"></div>
+            <div class="swiper-slide"><img src="https://gdurl.com/0gxd"></div>
+            <div class="swiper-slide"><img src="https://gdurl.com/PcmK"></div>
+            <div class="swiper-slide"><img src="https://gdurl.com/I2sT"></div>
+            <div class="swiper-slide"><img src="https://gdurl.com/Ic3dP"></div>
+            <div class="swiper-slide"><img src="https://gdurl.com/L_Eq"></div>
+          
+          ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  <div class="text">
+    <h2>Welcome! To Enthusia StrEat's Main Menu!</h2>
+    <p>Click the button now, to browse our deliciously made snacks! Alongsides, the variety of freshly picked fruits for your favourite Fruit Shakes!</p>
+    <a href="main_menu.html" class=btn>Go to Menu</a>
   </div>
+</div>
 </section>
 
 <!-- About Section -->
@@ -815,8 +113,8 @@ a{
   <div class="wrapper">
     <div class="text">
       <p>Welcome to Enthusia_StrEat, your ultimate destination for a mouthwatering journey through</p>
-      <p>the world of burgers, hotdogs, shakes, and an array of delectable sides. We're not just a food</p>
-      <p>stop; we're a flavor-packed adventure waiting to delight your taste buds.</p>
+      <p>the world of burgers, hotdogs, shakes, and an array of delectable sides. We're not just a food stop;</p>
+      <p>We're a flavor-packed adventure waiting to delight your taste buds.</p>
     </div>
     <div class="video-wrapper">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EY4ihPFtNrY?si=5wZT7ykS1hhdyknc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -839,7 +137,7 @@ a{
                 <div class="profile">
                     <!--img---->
                     <div class="profile-img">
-                        <img src="file:///F:/Enthusia%20StrEat/Arjan.jpg" />
+                        <img src="https://gdurl.com/MWyI" />
                     </div>
                     <!--name-and-username-->
                     <div class="name-user">
@@ -869,7 +167,7 @@ a{
                 <div class="profile">
                     <!--img---->
                     <div class="profile-img">
-                        <img src="file:///F:/Enthusia%20StrEat/Kim.jpg" />
+                        <img src="https://gdurl.com/a06A" />
                     </div>
                     <!--name-and-username-->
                     <div class="name-user">
@@ -899,7 +197,7 @@ a{
                 <div class="profile">
                     <!--img---->
                     <div class="profile-img">
-                        <img src="file:///F:/Enthusia%20StrEat/charene.jpg" />
+                        <img src="https://gdurl.com/hcdS" />
                     </div>
                     <!--name-and-username-->
                     <div class="name-user">
@@ -929,7 +227,7 @@ a{
               <div class="profile">
                   <!--img---->
                   <div class="profile-img">
-                      <img src="file:///F:/Enthusia%20StrEat/Laundrix.jpg" />
+                      <img src="https://gdurl.com/sZmo" />
                   </div>
                   <!--name-and-username-->
                   <div class="name-user">
@@ -951,9 +249,7 @@ a{
               <p>Thank you for taking my order.</p> <p>Nagustuhan po namin ng mga staff ko yung burger</p>&#160;&#160;
           </div>
       </div>
-  </div>
-</div>
-    </form>
+    </div>
   </div>    
 </section>
 
@@ -961,7 +257,7 @@ a{
 <section id="contact">
   <div class="wrapper">
     <div class="form-wrapper">    
-      <h4>Add More Beauty To Your Email</h4>
+      <h4>Add More Flavor To Your Email</h4>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input type="email" id="email" name="email" placeholder="Your email" required>
         <input type="submit" id="submit" value="OK" class="submit">
@@ -984,6 +280,27 @@ a{
   </div>
 </section>
   
-</body>
+  
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+<script>
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+</script>
+
+</body>
 </html>

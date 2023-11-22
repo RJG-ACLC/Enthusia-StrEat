@@ -166,15 +166,24 @@ a.nav-link:focus{
 /* Hero Section */
 .hero {
 	display: flex;
-	height: 100vh;
+	height: 90vh;
 	align-items: center;
-	background: #ffff3f url("https://i.postimg.cc/9fTzqwtw/flower2.png") no-repeat right bottom;
+  background-color: #ffff3f;
 }
+
 .hero-img img{
   display: none;
 }
 .hero-text{
   padding: 0 2em 7.5em;
+}
+
+.hero-text .btn {
+  background-color: #ffff3f;
+}
+
+#hero {
+  background-color: #ffff3f;
 }
 
 /* Featured Section */
@@ -192,7 +201,7 @@ a.nav-link:focus{
 
 #preview .image  img,
 .line, h3 {
-  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 #preview .image img{
@@ -214,8 +223,8 @@ a.nav-link:focus{
   margin-top: 150px;
 }
 
-@media (width: 480px) {
-  #preview .text, #preview .text p {display: block;}
+#featured h2{
+  margin-top: 130px;
 }
 
 .text{
@@ -319,6 +328,7 @@ section#about{
 /* Contact Section */
 section#contact{
   padding: 3em 2em .5em;
+  background-color: #ffff3f;
 }
 .form-wrapper:after,
 .contact-wrapper:after{
@@ -797,7 +807,20 @@ input#email:-webkit-autofill::selection {
 
 .swiper{
   width: 600px;
-  height: 548px;
+  height: 570px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 45% !important;
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-wrapper img {
