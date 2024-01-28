@@ -3,28 +3,28 @@
      "id": 5,
      "name": "Hotdog Sandwich",
      "price": 35,
-     "image": "https://gdurl.com/foVwa",
+     "image": "https://lh3.googleusercontent.com/pw/ABLVV85GHmJCkETdJ-c-XrUIUYRWTO_YCDCzmN8b8E_d-HAb7Up-umqtV0lMe1ul8rSlkVOhXRtahNdWjl4spt-31h6C-DAxfO5Uxyg23JtmP7QQ1gwuUnw=w2400",
      "description": "Contains: 1pc. of TJ Jumbo Hotdog, Ketchup, Mayonnaise, Shredded Cheese, 1 Lettuce Leaf, Cucumber."
  },
  {
      "id": 6,
      "name": "Footlong",
      "price": 60,
-     "image": "https://gdurl.com/0gxd",
+     "image": "https://lh3.googleusercontent.com/pw/ABLVV86_7sLng2Ij7ZsgrmQNfry3Q5erW8lQa3MEE4F-xe4DhW__BqZuiMmYKChVe1U3XZFL6kqaUflb43dbJO43p3n4N-qBdnMWZ4r7n-SIHv-FGnRjFfE=w2400",
      "description": "Contains: Footlong,"
  },
  {
      "id": 7,
      "name": "Half Footlong w/ Fries",
      "price": 60,
-     "image": "https://gdurl.com/Ic3dP",
+     "image": "https://lh3.googleusercontent.com/pw/ABLVV85SsCKxro7CZaMVy1WXU72lcx_fedgypf0jk9yH-hPlxmFF4f6yHc7Af0vDCJHxRe_fcVOyYK0z02l9EjsDHlvZP_xAD4tg3zXLJW5Ez-s7RzF3N60=w2400",
      "description": "Contains: Half Footlong, Fries,"
  },
  {
     "id": 8,
     "name": "Hungarian Sandwich",
     "price": 70,
-    "image": "https://gdurl.com/E0OY",
+    "image": "https://lh3.googleusercontent.com/pw/ABLVV86m8HlRN2vc1GNtYBA-hEskMVdh44a2zMAVcSlpwgmygIukdL5Fmj8g9sf4eGfotRDAl1XINW3bv8_8gqGdYMUeMy3qXbqs3NA1_E_wNT3zjSWmJN0=w2400",
     "description": "Contains: Hungarian Hotdog,"
  }
 ]
