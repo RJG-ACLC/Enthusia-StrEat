@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* Global */
+html{scroll-behavior:smooth}
+
 * {
   box-sizing: border-box;
 }
@@ -188,23 +189,31 @@ a.nav-link:focus{
 
 /* Featured Section */
 
-#featured .image  img,
+#featured .image img,
+#featured .image2 img,
 .line, h3 {
   margin-top: 50px;
 }
 
-#featured .image img{
+#featured .image img {
   width: auto;
   height: auto;
   padding-left: 10%;
 }
 
-#preview .image  img,
+#featured .image2 img {
+  width: auto;
+  height: auto;
+}
+
+#preview .image img,
+#preview .image2 img,
 .line, h3 {
   margin-bottom: 30px;
 }
 
-#preview .image img{
+#preview .image img, 
+#preview .image2 img{
   width: 600px;
   height: 500px;
   margin-right: 20px;
@@ -245,24 +254,24 @@ a.nav-link:focus{
   margin: 10px;
 }
 
-@media (width: 1280px) {
-  #featured .image img {width: 100%; height: 100%; padding-left: 20%;}
+@media (max-width: 1280px) {
+  #featured .image img, #featured .image2 img {width: 100%; height: 100%; padding-left: 20%;}
 }
 
-@media (width: 1200px) {
-  #featured .image img {width: 100%; height: 100%; padding-left: 20%;}
+@media (max-width: 1200px) {
+  #featured .image img, #featured .image2 img {width: 100%; height: 100%; padding-left: 20%;}
 }
 
-@media (width: 992px) {
-  #featured .image img {width: 100%; height: 100%; padding-left: 20%;}
+@media (max-width: 992px) {
+  #featured .image img, #featured .image2 img {width: 100%; height: 100%; padding-left: 20%;}
 }
 
-@media (width: 768px) {
-  #featured .image img {width: 400px; height: 300px;}
+@media (max-width: 768px) {
+  #featured .image img, #featured .image2 img {width: 400px; height: 300px;}
 }
 
-@media (width: 480px) {
-  #featured .image img {width: 380px; height: 90%; margin-right: 90px;}
+@media (max-width: 480px) {
+  #featured .image img, #featured .image2 img {width: 100%; height: 100%; margin-left: -35px}
   #featured h2 {text-align: center;}
 }
 
@@ -501,7 +510,8 @@ input{
     flex: 1;
     order: 2;
   }
-  #featured .image{
+  #featured .image,
+  #featured .image2 img{
     flex: 1 0 12em;
     order: 1;
   }
@@ -827,3 +837,5 @@ input#email:-webkit-autofill::selection {
   width: 100%;
   position: absolute;
 }
+
+
